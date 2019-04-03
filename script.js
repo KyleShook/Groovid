@@ -1,42 +1,4 @@
 
-   /*
-    window.onload = function() {
-      document.getElementById("search").addEventListener('click', showResults)
-    };
-    
-
-    function showResults() {
-      var searchTerm = document.querySelector('input[name="searchTerm"]').value
-      var url='https://en.wikipedia.org/w/api.php?format=json&action=opensearch&origin=*&search='+searchTerm;
-      var output = document.querySelector('#output');
-      output.innerHTML="";
-      
-      
-      var url1 = 'https://www.googleapis.com/youtube/v3/search/?part=snippet&key=AIzaSyCnDV9klQbq9IBCrUyCmkWcXwO9TNO1M1k&q='+searchTerm+'&maxResults=8';
-
-      ajaxJS(url1,function(data){
-        for (var x in data.items){
-          //var title = data.items[x].snippet.title;
-          //var desc = data.items[x].snippet.description;
-         // var thumb = data.items[x].snippet.thumbnails.default.url;
-          var videoID = data.items[x].id.videoId;
-          output.innerHTML += '<div class="yt-cont"><iframe class="yt-videos" src="https://youtube.com/embed/'+videoID+'"></iframe></div>';
-        }
-      })
-    }
-
-    function ajaxJS(url, callback){
-      var xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function(){
-        if(xhr.readyState==4 && xhr.status == 200)
-        callback(JSON.parse(xhr.responseText));
-      }
-
-      xhr.open('GET',url, true)
-      xhr.send();
-    }
- */
-
 
 
 var pageToken = {};
